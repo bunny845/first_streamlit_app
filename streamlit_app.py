@@ -50,7 +50,7 @@ try:
 except URLError as e:
   streamlit.error()
 # dont run anything past here while troubleshooting
-streamlit.stop()
+# streamlit.stop()
 
 
 

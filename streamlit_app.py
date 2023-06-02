@@ -6,7 +6,7 @@ streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach and Rocket Smoothie')
 streamlit.text('🐔 Hand-Boiled Free-Range Egg')
 streamlit.text('🥑🍞 Avocado Toast')
-# new header 
+# new header Update streamlit_app.py
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 # use pandas to fetch data from a csv file
 import pandas
@@ -36,7 +36,7 @@ streamlit.dataframe(fruityvice_normalized)
 # snowflake integration with streamlit
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("SELECT * from pc_rivery_db.public.my_fruit_load_list")
+my_cur.execute("SELECT * from pc_rivery_db.fruit_load_list")
 streamlit.text("The fruit load list contains:")
 my_data_row = my_cur.fetchone()
 streamlit.text(my_data_row)

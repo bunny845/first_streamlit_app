@@ -26,5 +26,5 @@ steps:
 
 
 - script: |
-    python3 streamlit_app.py
+    python3 test.py
   displayName: 'runningg'

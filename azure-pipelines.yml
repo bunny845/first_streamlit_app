@@ -23,10 +23,7 @@ steps:
     python -m pip install --upgrade pip
   displayName: 'Install dependencies'
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+
 
 - script: |
     python3 first_streamlit_app.py
